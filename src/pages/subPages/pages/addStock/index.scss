@@ -1,0 +1,55 @@
+page{
+    height: 100vh;
+    overflow: hidden;
+}
+.ys-stock-add{
+    overflow: hidden;
+    height: 100%;
+//   .addstock-search {
+//     position: sticky;
+//     top: 0;
+//     z-index: 9;
+//     height: 100px;
+//   }
+.taroify-fixed-view--top{
+    top: 170px;
+}
+.taroify-fixed-view--top,
+.taroify-fixed-view--bottom {
+  z-index: 9;
+}
+
+
+  .bottom-btns{
+      z-index: 9;
+    padding: 20px 40px;
+    // bottom: 100px;
+    bottom: constant(safe-area-inset-bottom);
+    bottom: env(safe-area-inset-bottom);
+    font-size: 32px;
+    border-top: 2px solid #eee;
+    border-bottom: 2px solid #eee;
+    box-sizing: border-box;
+    background-color: #FFF;
+    
+    .bottom-btns-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .taroify-button {
+            border-radius: 40px;
+            font-size: 32px;
+            width: 200px;
+            flex: 1;
+            &:nth-child(1) {
+              margin-right: 20px;
+            }
+    
+            &:nth-child(2) {
+            }
+          }
+      }
+  }
+}
+
+

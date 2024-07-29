@@ -1,0 +1,109 @@
+page{
+    height: calc( 100vh - 170px );
+    overflow: hidden;
+}
+.ys-user {
+    height: calc( 100vh - 170px );
+    padding-top: 40px;
+    .user-shops-wrap{
+        height: calc( 100vh - 400px );
+        border-top: 2px solid #eee;
+        border-radius: 40px;
+        margin-top: 40px;
+        .user-company {
+            padding: 30px 30px 0 30px;
+            
+            .company-name {
+              font-weight: 600;
+              font-size: 36px;
+            }
+        
+            .company-admin {
+              font-size: 32px;
+              margin-top: 20px;
+            }
+          }
+        
+          .user-shops {
+            padding: 30px;
+        
+            .shops-item {
+              display: flex;
+              justify-content: space-between;
+              padding: 30px;
+              border: 2px solid #eee;
+              border-radius: 40px;
+              margin-top: 20px;
+        
+              .item-left {
+                font-size: 32px;
+              }
+        
+              .item-right {
+                  height: 50px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: flex-end;
+                width: 150px;
+                font-size: 32px;
+                color: #1989fa;
+                .van-icon{
+                    margin-right: 10px;
+                }
+        
+              }
+            }
+          }
+    }
+
+  .user-info {
+    position: relative;
+    display: flex;
+    padding: 0 40px 0 140px;
+
+    .info-avatar {
+      position: absolute;
+      left: 40px;
+      top: 0;
+      width: 130px;
+      .van-icon{
+          font-size: 52px;
+          color: #fff;
+          font-weight: 600;
+      }
+    }
+
+    .info-msg {
+      flex: 2;
+
+      .msg-name {
+        font-size: 32px;
+      }
+
+      .msg-phone {
+        color: #BDBDBD;
+        font-size: 28px;
+        margin-top: 10px;
+      }
+
+    }
+
+    .info-btn {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      flex: 1;
+      font-size: 28px;
+
+      .van-icon {
+        margin-right: 10px;
+      }
+    }
+  }
+  .ys-login-out-btn{
+    padding-bottom: constant(safe-area-inset-bottom); 
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  
+}

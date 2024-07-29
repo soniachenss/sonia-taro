@@ -1,0 +1,150 @@
+
+.ys-shop-stock-item {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    padding: 0 50px;
+    border-bottom: 2px solid #eee;
+    box-sizing: border-box;
+  
+    .item-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex: 2;
+      font-size: 32px;
+      .top-right{
+        color: #8A8A8A;
+    }
+    }
+  
+    .item-bottom {
+      display: flex;
+      flex: 3;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 32px;
+      .bottom-left{
+          display: flex;
+          align-items: center;
+          flex: 1;
+      }
+      .bottom-right{
+          width: 320px;
+          display: flex;
+          align-items: center;
+          color: #1989fa;
+          font-size: 28px;
+          margin-left: 10px;
+          .content{
+            display: flex;
+            align-items: center;
+            width: calc( 100% - 30px );
+            .label{
+                width: 130px;
+            }
+            .number{
+                width: calc( 100% - 130px );
+                // display: flex;
+                // align-items: center;
+                // justify-content: flex-end;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                text-align: right;
+            }
+          }
+          .ellipsis{
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              overflow: hidden;
+              
+          }
+      }
+      .bottom-stepper{
+          display: flex;
+          margin-right: 20px;
+          .taroify-input{
+              border-top: 2px solid #dcdee0;
+              border-bottom: 2px solid #dcdee0;
+              height: 70px;
+              width: 185px;
+              font-size: 32px;
+              padding: 0 20px;
+              text-align: center;
+          }
+          .taroify-button{
+              width: 70px;
+              height: 70px;
+              border-radius: 0;
+              font-size: 48px;
+          }
+      }
+      .taroify-stepper{
+          border: 2px solid #eee;
+          .taroify-stepper__decrease{
+          }
+          .taroify-stepper__input {
+              width: 160px;
+              margin: 0;
+              border-left: 2px solid #eee;
+              border-right: 2px solid #eee;
+              background-color: #FFF;
+              text-align: right;
+              padding: 0 10px;
+              font-size: 32px;
+          }
+          .taroify-stepper__increase{
+              background-color: #FFF;
+          }
+          .taroify-stepper__decrease::before, .taroify-stepper__increase::before {
+              width: 30%;
+          }
+          .taroify-stepper__decrease::after, .taroify-stepper__increase::after {
+              height: 30%;
+          }
+  
+  
+      }
+    }
+    .item-warning{
+        font-size: 26px;
+        margin: 10px 0;
+    }
+
+    
+  }
+  .warning-info{
+    color: #ed6a0c;
+  }
+
+.ys-shop-popup{
+    padding: 20px 40px;
+    .popup-item{
+        display: flex;
+        align-items: center;
+        height: 80px;
+
+        .item-date{
+            // flex: 2;
+            width: 140px;
+        }
+        .item-content{
+            display: flex;
+            width: 230px;
+            .item-content-gray{
+                color: #8A8A8A;
+            }
+        }
+        .item-number{
+            display: flex;
+            justify-content: flex-end;
+            flex: 1;
+        }
+    }
+    .popup-divider{
+        display: flex;
+        width: 100%;
+        border-bottom: 3px dashed #eee;
+    }
+}

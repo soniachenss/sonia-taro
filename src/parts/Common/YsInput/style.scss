@@ -1,0 +1,33 @@
+.ys-number-input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 185px;
+    .ys-input{
+        position: relative;
+        z-index: 8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .ys-cursor{
+            height: 36px;
+            width: 2px;
+            margin-left: 2px;
+        }
+    }
+}
+.taroify-number-keyboard{
+    z-index: 99999;
+}
+.taroify-key{
+    font-size: 48px;
+}
+.ys-keyboard-mask{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 7;
+    // background-color: rgba(0,0,0,0.2);
+}

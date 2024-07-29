@@ -1,0 +1,102 @@
+page{
+    overflow: hidden;
+}
+.ys-stock-order {
+    padding-top: 40px;
+    #toast{
+        font-size: 32px;
+    }
+    .order-notice-wrap{
+        padding: 20px 30px;
+        background-color: #fffbe8;
+        .order-notice {
+            display: flex;
+            flex-direction: column;
+            .notice-shop {
+                display: flex;
+              color: #222224;
+              margin-right: 20px;
+              .notice-tag{
+                  margin-left: 10px;
+                  .taroify-tag{
+                    margin-left: 10px;
+                  }
+              }
+            }
+          }
+    }
+ 
+
+  .order-bottom-btns {
+    padding: 20px 40px;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    // bottom: 0;
+    padding-bottom: calc( constant(safe-area-inset-bottom) + 20px );
+    padding-bottom: calc( env(safe-area-inset-bottom) + 20px );
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 32px;
+    border-top: 2px solid #eee;
+    border-bottom: 2px solid #eee;
+    box-sizing: border-box;
+    background: #FFF;
+
+    .bottom-btns-left {
+      flex: 2;
+    }
+
+    .bottom-btns-right {
+      display: flex;
+      flex: 1;
+      justify-content: flex-end;
+
+      .taroify-button {
+        border-radius: 40px;
+        font-size: 32px;
+
+        &:nth-child(1) {
+          width: 150px;
+          margin-right: 20px;
+        }
+
+        &:nth-child(2) {
+          width: 200px;
+        }
+      }
+    }
+  }
+  .ys-order-scroll-view{
+      height: calc( 100vh - 300px);
+      font-size: 32px;
+  }
+}
+
+.ys-stock-order-item {
+  display: flex;
+  flex-direction: column;
+  height: 180px;
+  padding: 0 50px;
+  border-bottom: 2px solid #eee;
+
+  .item-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 2;
+    font-size: 32px;
+  }
+
+  .item-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 3;
+    font-size: 32px;
+    .bottom-right{
+
+    }
+  }
+}

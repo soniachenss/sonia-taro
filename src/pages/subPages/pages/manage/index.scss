@@ -1,0 +1,116 @@
+
+page{
+    height: 100vh;
+    overflow: hidden;
+}
+.ys-shop-manage{
+    padding-top: 40px;
+    padding-bottom: calc( constant(safe-area-inset-bottom) + 100px ); /*兼容 IOS<11.2*/
+    padding-bottom: calc( env(safe-area-inset-bottom) + 100px ); /*兼容 IOS>11.2*/
+    .manage-scroll-wrap{
+        height: calc( 100vh - 270px - constant(safe-area-inset-bottom) );
+        height: calc( 100vh - 270px - env(safe-area-inset-bottom) );
+        .manage-admin{
+            // padding: 20px 40px;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            .ys-form-item{
+                border-bottom: 2px solid #eee;
+            }
+            .admin-disable-input{
+                border: 2px solid #eee;
+                border-radius: 16px;
+                background-color: #D9D9D9;
+                padding: 8px 40px;
+                font-size: 32px;
+            }
+        }
+        .manage-form{
+            // padding: 20px 40px;
+            .form-list{
+                padding: 20px 40px;
+               .list-title{
+                   font-size: 32px;
+                   margin-bottom: 20px;
+               } 
+               .list-content{
+                   .content-item{
+                       display: flex;
+                       align-items: center;
+                       font-size: 32px;
+                       margin-bottom: 20px;
+                       .item-name{
+                           flex: 4;
+                           margin-right: 10px;
+                       }
+                       .item-phone{
+                           flex: 8;
+                           margin-right: 10px;
+                       }
+                       .item-delete{
+                           display: flex;
+                           align-items: center;
+                           justify-content: flex-end;
+                           flex: 1;
+                           color: #F45D51;
+                           font-size: 42px;
+                       }
+                   }
+               }
+               .list-btn{
+                    font-size: 32px;
+                    margin-top: 20px;
+                    color:  #1989fa;
+               }
+            }
+        }
+    }
+    
+    .manage-btns{
+        display: flex;
+        justify-content: flex-end;
+        padding: 20px 0;
+        border-top: 2px solid #eee;
+        // bottom: 100px;
+        bottom: constant(safe-area-inset-bottom) ;
+        bottom: env(safe-area-inset-bottom);
+        .taroify-button{
+            // flex: 1;
+            margin-right: 20px;
+            border-radius: 60px;
+            width: 200px;
+            font-size: 32px;
+        }
+    }
+
+}
+
+.ys-form-item{
+    padding: 20px 40px;
+    display: flex;
+    align-items: flex-start;
+    .item-label{
+        flex: 2;
+        font-size: 32px;
+    }
+    .item-content{
+        flex: 3;
+        font-size: 32px;
+        .taroify-input--disabled{
+            background-color: #D9D9D9;
+            color: #222224;
+            -webkit-text-fill-color: #222224;
+        }
+    }
+}
+.ys-input-border{
+    display: flex;
+    align-items: center;
+    border: 2px solid #eee;
+    border-radius: 16px;
+    padding: 0 20px;
+    font-size: 32px;
+    height: 70px;
+    line-height: 70px;
+
+}
